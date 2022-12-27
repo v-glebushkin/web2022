@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link href="def.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>
+        User database
+    </h1>
+    <table>
+            <p style="font-size: 20px; padding: 0 50px">
+                User id: {{ users['id'] }}<br>
+                Name: {{ users['name'] }}<br>
+                Surname: {{ users['surname'] }}<br>
+                Telephone: {{ users['telephone'] }}<br>
+            </p>
+    </table>
+    <br>
+    <table>
+        <tr>
+        <td width="10%">
+    </form>
+        </td>
+        <td>
+    <form action="/users" method="get">
+        <button class="my-bt">Back to all users</button>
+    </form>
+    <form action="/" method="get">
+        <button class="my-bt">Home</button>
+    </form>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>

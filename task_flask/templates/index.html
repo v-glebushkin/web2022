@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone directory</title>
+    <link href="def.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1 class="main-title">
+        Telephone book
+    </h1>
+    {% block content %}
+    <table>
+        <td>
+            <p>
+                The database stores information about users, their name, surname, telephone number.
+                Users have their own id.
+            </p>
+
+            <td>
+                <br><img src="https://static.mk.ru/upload/entities/2022/05/24/13/articles/facebookPicture/68/98/62/69/f5172ea1d24b5bd81cf9f44e6dd2ba4b.jpg" width="300" alt="telephone">
+            </td>
+        </td>
+    </table>
+    <form method="get" action="/users">
+        <button id="open-base">Get users tel numbers</button>
+    </form>
+    {% endblock %}
+</body>
+</html>
